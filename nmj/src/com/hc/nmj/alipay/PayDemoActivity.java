@@ -24,10 +24,10 @@ import com.hc.nmj.utils.DBUtils;
 
 public class PayDemoActivity extends FragmentActivity {
 
-    public static final String PARTNER = "2088711459067170";
-    public static final String SELLER = "2439753947@qq.com";
-    public static final String RSA_PRIVATE = "MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAMMy2RxA8BYRfQfcWtMvGkS2GX3Y+4CWNGN1FnA9u4KsWNWz+6jJCSbHLOQKWXEaJLge53n1ahTz3OCAi65PozHBdnv8bWW/o/G93oKK6eQnUTi55A6deFQDTMXuXP1NH6mQ4quZMdySytltN5iV+KUZFNJnqPJLmGpO0Gq1ELdJAgMBAAECgYAW87GnqtMQJTpIZFaholY6YhcZPxxDgGXkk+3xgLC9qro/VoxuykSzNJRItBbUP7i1lZyuMHcqw4njM/o4otCTYm8+POJAoJjd6SK87RUggTGImFNzo25gKHFHlE5qi662AVCrlvuAJyyIyE8NM9ez4dFbr+/yChmf8voEczfSAQJBAPC+lYWNLuem3aIfAMQz9coFZt/5FYp/TuERNcpIrP60ZcN9XyfDJi9lFiF1eVZxbPHQcCxtwQxeP7R6MF7kOSkCQQDPkWh8ktNrLIBGg9cX5pSGShlp5UKYhSjJJyoqqEBKZAh4D+QTHYyj9L83CLMNIqK96nAkHyechcaFiqthILEhAkEArLOrw8DCU0ArYm/nNtkni6NQZ3/iahZl2aNk+RYltBppnlHD/1xJelqEA8CoKND5nIcw0U5y3JKIFMpLBOen8QJAajvbpFZpSmL+TBjSD3N99LUcCKzDxtfwJfObizWNogVMqFZJvtbS0l9DNmGHcmOVs2m3d2VSmrOFBXgReqaGwQJACtljZSA5Qju5193ilmfNwJ6dDoaEW7s14QdVRdKKcT3ASpk0jLoUjBYUihT4P5QMB/lloX8N0J4EPmm1sIOt0Q==";
-    public static final String RSA_PUBLIC = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDMtkcQPAWEX0H3FrTLxpEthl92PuAljRjdRZwPbuCrFjVs/uoyQkmxyzkCllxGiS4Hud59WoU89zggIuuT6MxwXZ7/G1lv6Pxvd6CiunkJ1E4ueQOnXhUA0zF7lz9TR+pkOKrmTHcksrZbTeYlfilGRTSZ6jyS5hqTtBqtRC3SQIDAQAB";
+    public static final String PARTNER = "";
+    public static final String SELLER = "";
+    public static final String RSA_PRIVATE = "";
+    public static final String RSA_PUBLIC = "";
 
     private static final int SDK_PAY_FLAG = 1;
 

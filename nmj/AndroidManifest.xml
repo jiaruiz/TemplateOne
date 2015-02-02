@@ -27,7 +27,7 @@
         <!-- meta-data需要写在application中 -->
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="XhlfQBOGpjzlYsMG0GPiu3Gi" />
+            android:value="" />
 
         <activity
             android:name="com.hc.nmj.ui.SplashActivity"

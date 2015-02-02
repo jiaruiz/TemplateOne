@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/search_bar_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/search_bar_ly_bg" >
+
+
+        <RelativeLayout
+            android:id="@+id/backlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingRight="5dip"
+             >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/searchbar_back_button_bg"
+                android:clickable="true"
+                android:onClick="onClick" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/backlayout"
+            android:paddingRight="60dip"
+            android:paddingLeft="8dip"
+            android:id="@+id/search">           
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/search_edit_bg"
+                android:hint="搜索你喜欢的宝贝"
+                android:paddingLeft="28.0dip"
+                android:paddingRight="28.0dip"
+                android:layout_marginTop="6dip"
+                android:singleLine="true"
+                android:textColor="#ff727272"
+                android:textColorHint="#ff999999"
+                android:textSize="14.0sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8.0dip"
+                android:src="@drawable/searchbar_icon" />  
+                             
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" 
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+             >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/pink"
+            android:textSize="16sp"            
+            />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/search_before"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/search_bar_ly"
+        android:visibility="visible" >
+    
+    <TextView 
+        android:id="@+id/hot_search_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_style_black"
+        android:text="热门搜索:"
+        android:layout_marginTop="25dip"
+         />
+    
+    <LinearLayout
+        android:id="@+id/hot_search_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/hot_search_tv"
+        android:layout_marginTop="10dip"
+         >
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/history_search_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_style_black"
+        android:text="搜索历史:"
+        android:layout_below="@id/hot_search_ll"
+        android:layout_marginTop="25dip"
+         />
+    
+    <LinearLayout
+        android:id="@+id/history_search_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/history_search_tv"
+        android:layout_marginTop="10dip"
+         >
+    </LinearLayout>
+    
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:id="@+id/search_after"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/search_bar_ly"
+        android:orientation="vertical" >
+        
+        <RadioGroup
+                android:id="@+id/top_radio_button_group"
+ 	            android:layout_width="fill_parent"
+	            android:layout_height="35dip"
+	            android:layout_gravity="center"               
+	            android:orientation="horizontal" >
+	            
+	            <RadioButton
+	                android:id="@+id/tv_tab_activity"
+	                android:text="@string/tab_1"
+	                style="@style/index_tab_top"
+	                android:checked="true"
+	                android:drawableLeft="@drawable/fashion_icon_bg" 
+	                />
+	
+	            <RadioButton
+	                android:id="@+id/tv_tab_groups"
+	                android:text="@string/tab_2"
+	                style="@style/index_tab_top"
+	                android:drawableLeft="@drawable/special_icon_bg" 
+	                />
+	
+	            <RadioButton
+	                android:id="@+id/tv_tab_friends"
+					style="@style/index_tab_top"
+	                android:text="@string/tab_3"
+	                android:drawableLeft="@drawable/recommend_icon_bg" 
+	                />
+	            </RadioGroup>
+	            
+        	<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="bottom"
+	            android:orientation="vertical"
+	           >
+	            <ImageView
+	                android:id="@+id/iv_bottom_line"
+	                android:layout_width="40dip"
+	                android:layout_height="2dip"	                
+	                android:scaleType="matrix"
+	                android:src="@color/pink" />
+	        </LinearLayout>
+	            
+        <android.support.v4.view.ViewPager
+	        android:id="@+id/vPager"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dip"
+	        android:layout_weight="1.0"
+	        android:layout_gravity="center"	        
+	        android:background="#000000"
+	        android:flipInterval="30"
+	        android:persistentDrawingCache="animation" />
+	    </LinearLayout>	    	
+        
+</RelativeLayout>

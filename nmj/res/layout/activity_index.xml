@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+       	android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="46.669983dip"
+        android:background="@drawable/title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="柠檬街"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView 
+            android:id="@+id/maps"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:src="@drawable/maps"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip" />
+        
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_toRightOf="@id/maps"
+            android:layout_marginLeft="10dip"
+            android:textColor="@android:color/white"
+             />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/search_bar_ly"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="@drawable/search_bar_ly_bg" >
+
+            <RelativeLayout
+                android:id="@+id/backlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:paddingRight="5dip" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/backlayout"
+                android:paddingLeft="8dip"
+                android:paddingRight="60dip" >
+
+                <TextView
+                    android:id="@+id/search_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="6dip"
+                    android:background="@drawable/search_edit_bg"
+                    android:gravity="center_vertical"
+                    android:hint="搜索你喜欢的宝贝"
+                    android:paddingLeft="28.0dip"
+                    android:paddingRight="28.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff727272"
+                    android:textColorHint="#ff999999"
+                    android:textSize="14.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8.0dip"
+                    android:src="@drawable/searchbar_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="搜索"
+                    android:textColor="@color/pink"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/index_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         >
+
+        <com.hc.nmj.base.MyGallery
+            android:id="@+id/banner_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+             />
+
+        <LinearLayout
+            android:id="@+id/ll_bottomNavPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_gravity="bottom|right"
+            android:layout_below="@id/banner_gallery"
+            android:background="#00000000"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_focus_indicator_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- tab切换 -->
+    
+	<!-- <com.hc.nmj.weight.GridView
+        android:id="@+id/ggv"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@id/index_gallery"
+         /> -->
+	
+    
+  <com.handmark.pulltorefresh.library.PullToRefreshHeaderGridView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:horizontalSpacing="15dip"
+        android:numColumns="2"
+        android:verticalSpacing="15dip"
+        ptr:ptrMode="pullFromEnd" /> 
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="0dip" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/search_spinner_popu_item_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/search_spinner_popu_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="39dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/top_search_spinner_text_style"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/search_spinner_popu_item_actor"
+                android:layout_width="wrap_content"
+                android:layout_height="39dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/top_search_spinner_text_style"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/search_spinner_popu_item_director"
+                android:layout_width="wrap_content"
+                android:layout_height="39dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/top_search_spinner_text_style"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/search_spinner_popu_item_keywords"
+                android:layout_width="wrap_content"
+                android:layout_height="39dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/top_search_spinner_text_style"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/dicovery_spinner_list"
+            android:layout_width="80dip"
+            android:layout_height="200dip"
+            android:background="#00000000"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="5dip"
+            android:scrollbars="none"
+             >
+        </ListView>
+
+    </RelativeLayout>
+
+</LinearLayout>

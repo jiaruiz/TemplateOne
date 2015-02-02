@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+        <RelativeLayout
+        android:id="@+id/search_bar_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/search_bar_ly_bg" >
+
+
+        <RelativeLayout
+            android:id="@+id/backlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingRight="5dip"
+             >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/searchbar_back_button_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/backlayout"
+            android:paddingRight="60dip"
+            android:paddingLeft="8dip"
+            android:id="@+id/search">           
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/search_edit_bg"
+                android:hint="搜索你喜欢的宝贝"
+                android:paddingLeft="28.0dip"
+                android:paddingRight="28.0dip"
+                android:layout_marginTop="6dip"
+                android:singleLine="true"
+                android:textColor="#ff727272"
+                android:textColorHint="#ff999999"
+                android:textSize="14.0sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8.0dip"
+                android:src="@drawable/searchbar_icon" />  
+                             
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" 
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+             >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/pink"
+            android:textSize="16sp"            
+            />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>

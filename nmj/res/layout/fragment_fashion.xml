@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    >
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView 
+     		xmlns:ptr="http://schemas.android.com/apk/res-auto"
+         android:id="@+id/pull_refresh_grid"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         android:divider="#CCCCCC"   
+         android:dividerHeight="1dip" 
+         android:numColumns="2" 
+         android:verticalSpacing="15dip" 
+         android:horizontalSpacing="15dip"
+         android:background="@color/white"
+         android:gravity="center"        
+         android:fadingEdge="none"
+         ptr:ptrMode="pullFromEnd"
+          />  
+         
+    <RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:gravity="center"
+	    android:background="@color/white" 
+	    android:visibility="gone"
+	    android:id="@+id/footview"
+	    android:layout_alignParentBottom="true"
+    	>
+     <TextView   
+	      android:id="@+id/bt_load"    
+	      android:gravity="center_vertical" 
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:text="加载数据中..." 
+	      android:textColor="@color/black"/> 
+     <ProgressBar
+	      android:id="@+id/pg"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:paddingRight="5dip"    
+	      />
+   </RelativeLayout>
+</RelativeLayout>

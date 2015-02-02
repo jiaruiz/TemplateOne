@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"     
+      android:orientation="horizontal" 
+      >
+      <RelativeLayout 
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_weight="1.5"
+          >
+	     <ImageView
+	        android:id="@+id/img"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="3dip"       	        
+	        />    
+        </RelativeLayout>
+        
+        <LinearLayout 
+          android:layout_width="0dip"
+          android:layout_height="fill_parent"
+          android:layout_weight="2" 
+          android:orientation="vertical" 
+            >
+          <RelativeLayout 
+           android:layout_height="wrap_content"
+           android:layout_width="fill_parent" 
+           android:paddingTop="5dip"
+           android:paddingBottom="5dip"  
+              >
+           <TextView android:id="@+id/title"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="1dp"
+	        android:ellipsize="marquee"
+	        android:textColor="@color/black"
+	        android:textSize="12sp"/>
+          </RelativeLayout> 
+           
+          <RelativeLayout 
+           android:layout_height="wrap_content"
+           android:layout_width="fill_parent" 
+           android:gravity="left"  
+           android:paddingTop="3dip"
+           android:paddingBottom="3dip"  
+              >
+	          <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/integration"
+	            android:src="@drawable/ic_bg_back_integration"
+	            />
+	           <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/baoyou"
+	            android:layout_toRightOf="@id/integration"
+	            android:src="@drawable/ic_bg_baoyou"
+	            />
+           </RelativeLayout>
+          
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="3dip"
+            android:paddingTop="3dip" >
+  
+		      <TextView
+		        android:id="@+id/sale"
+		        android:layout_width="0dip"
+		        android:layout_height="wrap_content" 
+		        android:layout_weight="1"   
+		        android:textColor="@color/red"
+		        android:textSize="16sp" />
+		       <TextView
+		        android:id="@+id/price"
+		        android:layout_width="0dip"
+		        android:layout_height="wrap_content" 
+		        android:layout_weight="1"   
+		        android:textColor="@color/divide"
+		        android:textSize="10sp" />
+		      <TextView
+		        android:id="@+id/discount"
+		        android:layout_width="0dip"
+		        android:layout_height="wrap_content" 
+		        android:layout_weight="1"  
+		        android:textColor="@color/red"
+		        android:textSize="10sp" />
+		      <TextView 
+		        android:id="@+id/url"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:visibility="gone"
+		        />
+           </LinearLayout>
+
+           <RelativeLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:paddingBottom="3dip"
+               android:paddingTop="3dip" >
+
+               <TextView 
+                   android:layout_width="fill_parent"
+                   android:layout_height="fill_parent"
+                   android:id="@+id/info"
+                   android:textSize="10sp"                                      
+                   />
+           </RelativeLayout>  
+        </LinearLayout>
+  </LinearLayout>
+</RelativeLayout>

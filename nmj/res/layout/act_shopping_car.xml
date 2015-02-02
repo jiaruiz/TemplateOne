@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="购物车"
+        android:layout_centerHorizontal="true" />
+    
+    <ListView 
+        android:id="@+id/shopping_car_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:layout_marginBottom="50dip"
+        android:visibility="visible" ></ListView>
+    
+    <RelativeLayout
+        android:id="@+id/shopping_car_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true" >
+        
+        <CheckBox 
+            android:id="@+id/shopcar_all_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:visibility="gone" />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总计"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@id/shopcar_all_check"
+            android:layout_centerVertical="true" />
+        
+        <TextView 
+            android:id="@+id/shopping_car_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:layout_marginLeft="100dip"
+            android:layout_centerVertical="true" />
+        
+        <Button 
+            android:id="@+id/shopping_car_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结账"
+            android:onClick="onClick"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="20dip" />
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

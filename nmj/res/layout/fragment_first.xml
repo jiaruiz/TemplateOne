@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    >
+    <GridView 
+         android:id="@+id/ggv1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         android:divider="#CCCCCC"   
+         android:dividerHeight="1dip" 
+         android:numColumns="2" 
+         android:verticalSpacing="15dip" 
+         android:horizontalSpacing="15dip"
+         android:background="@color/white"
+         android:gravity="center"        
+         android:fadingEdge="none">  
+    </GridView>
+
+</RelativeLayout>
